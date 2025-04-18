@@ -1,0 +1,371 @@
+:root {
+    --primary: #e50914;
+    --dark-bg: #141414;
+    --light-bg: #181818;
+    --text-light: #e5e5e5;
+    --text-muted: #b3b3b3;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--dark-bg);
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    color: var(--primary) !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1600/700');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+}
+
+.btn-stream {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-stream:hover {
+    background-color: #f40612;
+    transform: scale(1.05);
+    color: white;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 3rem 0 2rem;
+}
+
+.category-container {
+    padding: 1rem 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.category-container::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    background-color: var(--light-bg);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.category-item:hover, .category-item.active {
+    background-color: var(--primary);
+}
+
+.product-card {
+    background-color: var(--light-bg);
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-show {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.featured-section {
+    background-color: var(--light-bg);
+    padding: 3rem 0;
+    margin: 3rem 0;
+}
+
+.featured-image {
+    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 2rem;
+}
+
+.featured-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.featured-show {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.featured-description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.newsletter-section {
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+    margin-bottom: 3rem;
+}
+
+.footer {
+    background-color: var(--dark-bg);
+    padding: 3rem 0;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--primary);
+}
+
+.social-icons {
+    font-size: 1.5rem;
+}
+
+.social-icons i {
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: var(--primary);
+}
+
+.shopping-cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Enhanced Media Queries for Responsive Design */
+
+/* Large Devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .featured-title {
+        font-size: 2rem;
+    }
+    
+    .product-card {
+        margin-bottom: 1.75rem;
+    }
+}
+
+/* Medium Devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .featured-content {
+        padding: 1.5rem;
+    }
+    
+    .featured-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin: 2.5rem 0 1.5rem;
+    }
+    
+    .product-img {
+        height: 220px;
+    }
+}
+
+/* Small Devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 50vh;
+        padding: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin: 2rem 0 1.25rem;
+    }
+    
+    .featured-image {
+        height: 300px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .featured-content {
+        padding: 1.25rem;
+    }
+    
+    .featured-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .newsletter-section {
+        padding: 3rem 0;
+    }
+    
+    .product-card:hover {
+        transform: scale(1.03);
+    }
+}
+
+/* Extra Small Devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn-stream {
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        margin: 1.75rem 0 1rem;
+    }
+    
+    .category-item {
+        padding: 0.4rem 1.2rem;
+        margin-right: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .product-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .product-img {
+        height: 200px;
+    }
+    
+    .featured-title {
+        font-size: 1.6rem;
+    }
+    
+    .featured-show {
+        font-size: 1rem;
+    }
+    
+    .footer {
+        padding: 2rem 0;
+    }
+}

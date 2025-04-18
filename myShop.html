@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix Shop </title>
+   
+    <link href="./assets/bootstrap.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="myShop.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">StreamFlix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="./loginPage.html">login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="tvshows.html">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myShop.html">My Shop</a>
+                        </li>
+                    </ul>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">
+                            <div class="shopping-cart-icon">
+                                <i class="bi bi-cart"></i>
+                                <span class="cart-count">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero-section">
+        <div class="container">
+            <div>
+                <img src="" alt="" srcset="">
+            </div>
+            <h1 class="hero-title">Wear Your Favorite Shows</h1>
+            <p class="hero-subtitle">Official merchandise from your favorite streaming originals</p>
+            <a href="#" class="btn btn-stream">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="container">
+        <h2 class="section-title">Shop By Category</h2>
+        <div class="category-container">
+            <div class="category-item active">All</div>
+            <div class="category-item">Apparel</div>
+            <div class="category-item">Accessories</div>
+            <div class="category-item">Home</div>
+            <div class="category-item">Collectibles</div>
+            <div class="category-item">Limited Edition</div>
+            <div class="category-item">Games</div>
+            <div class="category-item">Books</div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="container">
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Stranger Things Tee</h5>
+                        <div class="product-show">Stranger Things</div>
+                        <div class="product-price">$29.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Squid Game Hoodie</h5>
+                        <div class="product-show">Squid Game</div>
+                        <div class="product-price">$49.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Wednesday Mug</h5>
+                        <div class="product-show">Wednesday</div>
+                        <div class="product-price">$19.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Witcher Medallion</h5>
+                        <div class="product-show">The Witcher</div>
+                        <div class="product-price">$34.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Queen's Gambit Chess Set</h5>
+                        <div class="product-show">The Queen's Gambit</div>
+                        <div class="product-price">$89.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Bridgerton Journal</h5>
+                        <div class="product-show">Bridgerton</div>
+                        <div class="product-price">$24.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Money Heist Mask</h5>
+                        <div class="product-show">Money Heist</div>
+                        <div class="product-price">$19.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Product">
+                    <div class="card-body">
+                        <h5 class="product-title">Umbrella Academy Poster</h5>
+                        <div class="product-show">Umbrella Academy</div>
+                        <div class="product-price">$14.99</div>
+                        <button class="btn btn-stream btn-sm w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./assets/images/images.jpg" alt="Featured Collection" class="featured-image img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="featured-content">
+                        <h2 class="featured-title">Stranger Things Collection</h2>
+                        <div class="featured-show">Stranger Things</div>
+                        <p class="featured-description">
+                            Transport yourself to Hawkins with our exclusive Stranger Things collection. 
+                            From Hellfire Club tees to Scoops Ahoy uniforms, embrace the 80s nostalgia 
+                            with official merchandise from your favorite supernatural series.
+                        </p>
+                        <a href="#" class="btn btn-stream">Shop the Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Shows -->
+    <section class="container">
+        <h2 class="section-title">Shop By Show</h2>
+        <div class="row">
+            <!-- Show 1 -->
+            <div class="col-6 col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Show">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">Stranger Things</h5>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Show 2 -->
+            <div class="col-6 col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Show">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">Wednesday</h5>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Show 3 -->
+            <div class="col-6 col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Show">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">Squid Game</h5>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Show 4 -->
+            <div class="col-6 col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="./assets/images/images.jpg" class="card-img-top product-img" alt="Show">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">The Witcher</h5>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">View Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Stay Updated</h2>
+                    <p class="mb-4">Subscribe to get exclusive offers, early access to new collections, and updates about your favorite shows.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+                        <button class="btn btn-stream" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-4">StreamShop</h5>
+                    <p>Your one-stop destination for official merchandise from your favorite streaming shows.</p>
+                    <div class="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-4">Shop</h5>
+                    <a href="#" class="footer-link">New Arrivals</a>
+                    <a href="#" class="footer-link">Best Sellers</a>
+                    <a href="#" class="footer-link">Collections</a>
+                    <a href="#" class="footer-link">Sale</a>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-4">Help</h5>
+                    <a href="#" class="footer-link">FAQs</a>
+                    <a href="#" class="footer-link">Shipping</a>
+                    <a href="#" class="footer-link">Returns</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">About</h5>
+                    <a href="#" class="footer-link">Our Story</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Terms & Privacy</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="text-muted">© 2025 StreamShop. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="./assets/bootstrap.bundle.js"></script>
+</body>
+</html>

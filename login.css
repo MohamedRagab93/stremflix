@@ -1,0 +1,86 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.491), rgba(0, 0, 0, 0.416)) , url(./assets/login-bg.jpeg);
+    height: 100vh;
+}
+.login-top{
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-top img{
+    width: 150px;
+}
+
+
+.login-box{
+    background-color: rgba(0, 0, 0, 0.899);
+    width: 430px;
+    height: 630px;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.small-text{
+    font-size: 13px;
+}
+
+.form-control{
+    box-shadow: none !important;
+}
+
+.modal-body{
+    background-color: black ;
+    color: aliceblue;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Extra Small Devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .login-top {
+        height: 60px;
+        padding: 0px 15px;
+    }
+    
+    .login-top img {
+        width: 120px;
+    }
+    
+    .login-box {
+        width: 90%;
+        height: auto;
+        padding: 30px 20px;
+        margin: 0 auto;
+    }
+    
+    .small-text {
+        font-size: 12px;
+    }
+}
+
+/* Small Devices (tablets, 576px to 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+    .login-box {
+        width: 90%;
+        height: auto;
+        padding: 40px 30px;
+        margin: 0 auto;
+    }
+}
+
+/* Medium Devices (laptops, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .login-box {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Default styles already handle this size */
+}
