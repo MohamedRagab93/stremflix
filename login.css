@@ -11,8 +11,14 @@ body{
     align-items: center;
 }
 
-.login-top img{
-    width: 150px;
+.navbar-brand {
+    color: #e50914;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #fff
 }
 
 
